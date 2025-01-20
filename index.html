@@ -1,0 +1,242 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Professional Web Developer Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/horizon" rel="stylesheet"/>
+  <style>
+   
+  </style>
+  <script src="main.js">
+  
+  </script>
+ </head>
+ <body class="bg-gray-100 text-gray-900">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <a class="text-2xl font-bold text-gray-900 animate-bounce" href="#">
+     DevPortfolio
+    </a>
+    <div class="md:hidden">
+     <button class="text-gray-700 focus:outline-none" id="menu-button">
+      <i class="fas fa-bars" id="menu-icon">
+      </i>
+     </button>
+    </div>
+    <ul class="hidden md:flex space-x-6" id="menu">
+     <li>
+      <a class="text-gray-700 hover:text-gray-900" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-gray-900" href="#projects">
+       Projects
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-gray-900" href="#skills">
+       Skills
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-gray-900" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="relative bg-white py-20">
+    <canvas id="matrix-canvas" class="absolute inset-0 w-full h-full"></canvas>
+    <div class="container mx-auto px-4 text-center relative z-10">
+       <h1 class="text-4xl font-bold text-gray-900" id="animated-text">
+          Welcome to My Portfolio
+       </h1>
+       <p class="text-gray-700 mt-4">
+          A Professional Web Developer
+       </p>
+       <img alt="Portrait of Jane Doe, a professional web developer" class="mx-auto mt-8 rounded-full w-48 h-48" height="300" src="bg.png" width="300"/>
+    </div>
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+ </section>
+ 
+  <!-- About Section -->
+  <section class="bg-gray-100 py-20" id="about">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-900 text-center">
+     About Me
+    </h2>
+    <p class="text-gray-700 mt-4 text-center">
+        "Hallo, saya Muhamad Zubaedi, web developer dengan pengalaman 3 tahun. Saya ahli dalam Tailwind CSS, Bootstrap, JavaScript, Node.js, dan Python, serta berfokus pada pembuatan website responsif dan fungsional. Saya dapat membantu membangun aplikasi yang menarik secara visual dan andal dari sisi frontend maupun backend. Siap bekerja sama untuk mewujudkan kebutuhan digital Anda!"
+    </p>
+    <div class="flex flex-col md:flex-row items-center mt-8">
+     <img alt="Illustration of Jane Doe working on a laptop" class="w-48 h-48 rounded-full mx-auto md:mx-0 md:mr-8" height="300" src="WhatsApp Image 2024-10-03 at 20.58.02.jpeg" width="300"/>
+     <ul class="mt-4 md:mt-2">
+      <li class="text-gray-700 mt-2">
+       <strong>Lumicon :</strong> IT Support (2022-2022)
+      </li>
+      <li class="text-gray-700 mt-2">
+       <strong>Buah Bibir:</strong> Frontend Developer (2022-2023)
+      </li>
+     </ul>
+    </div>
+   </div>
+  </section>
+  <!-- Projects Section -->
+  <section class="bg-white py-20" id="projects">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-900 text-center horizon-italic">
+     Projects
+    </h2>
+    <div class="carousel mt-8">
+     <div class="carousel-item bg-gray-100 p-4 rounded-lg shadow-md">
+      <img alt="Screenshot of Project 1, a web application for task management" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/EcWazrO2w2plCVZDbT2pGfGxN4C22zDvnbFJytHedszBfGNoA.jpg" width="400"/>
+      <h3 class="text-xl font-bold text-gray-900 mt-4">
+       Project 1
+      </h3>
+      <p class="text-gray-700 mt-2">
+       A web application for task management.
+      </p>
+     </div>
+     <div class="carousel-item bg-gray-100 p-4 rounded-lg shadow-md">
+      <img alt="Screenshot of Project 2, an e-commerce website" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/cekIkCeHI3n0c00HjvnXAihjrh9q2OeqKHla1IguHskIeNaQB.jpg" width="400"/>
+      <h3 class="text-xl font-bold text-gray-900 mt-4">
+       Project 2
+      </h3>
+      <p class="text-gray-700 mt-2">
+       An e-commerce website.
+      </p>
+     </div>
+     <div class="carousel-item bg-gray-100 p-4 rounded-lg shadow-md">
+      <img alt="Screenshot of Project 3, a social media platform" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/KaQEaRdctCIZFpvqAcyauVuFJ2PvdUXqL7c3J3oPPUeeeGNoA.jpg" width="400"/>
+      <h3 class="text-xl font-bold text-gray-900 mt-4">
+       Project 3
+      </h3>
+      <p class="text-gray-700 mt-2">
+       A social media platform.
+      </p>
+     </div>
+     <div class="carousel-item bg-gray-100 p-4 rounded-lg shadow-md">
+      <img alt="Screenshot of Project 4, a portfolio website" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/IetuL8O3stREHazmqyDQG1kKwHStGVuKqvkyvRrfI5kCfGNoA.jpg" width="400"/>
+      <h3 class="text-xl font-bold text-gray-900 mt-4">
+       Project 4
+      </h3>
+      <p class="text-gray-700 mt-2">
+       A portfolio website.
+      </p>
+     </div>
+     <div class="carousel-item bg-gray-100 p-4 rounded-lg shadow-md">
+      <img alt="Screenshot of Project 6, a weather forecasting app" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/YDsXh2Iyc9IuJpxxKN3mEkwxukQhdmcB7VwMqdInyLKw3oBF.jpg" width="400"/>
+      <h3 class="text-xl font-bold text-gray-900 mt-4">
+       Project 5
+      </h3>
+      <p class="text-gray-700 mt-2">
+       A weather forecasting app.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Skills Section -->
+  <section class="bg-gray-100 py-20" id="skills">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-900 text-center">
+     Skills
+    </h2>
+    <div class="flex flex-wrap justify-center mt-8">
+     <div class="flex items-center m-4">
+      <img alt="JavaScript logo" class="w-12 h-12 skill-logo grayscale" height="50" src="html.png" width="50"/>
+      <span class="ml-2 text-gray-700">
+       HTML 5
+      </span>
+     </div>
+     <div class="flex items-center m-4">
+        <img alt="JavaScript logo" class="w-12 h-12 skill-logo grayscale" height="50" src="css.png" width="50"/>
+        <span class="ml-2 text-gray-700">
+         CCS 3
+        </span>
+       </div>
+       <div class="flex items-center m-4">
+        <img alt="JavaScript logo" class="w-12 h-12 skill-logo grayscale" height="50" src="js.png" width="50"/>
+        <span class="ml-2 text-gray-700">
+         JavaScript
+        </span>
+    </div>
+    <div class="flex items-center m-4">
+        <img alt="JavaScript logo" class="w-12 h-12 skill-logo grayscale" height="50" src="py.jpg" width="50"/>
+        <span class="ml-2 text-gray-700">
+         Python
+        </span>
+       </div>
+       <div class="flex items-center m-4">
+        <img alt="JavaScript logo" class="w-12 h-12 skill-logo grayscale" height="50" src="node.png" width="50"/>
+        <span class="ml-2 text-gray-700">
+         Node Js
+        </span>
+       </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-gray-100 py-20" id="contact">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-900 text-center">
+     Contact Me
+    </h2>
+    <div class="flex justify-center space-x-4 mt-8">
+     <a class="text-gray-700 hover:text-gray-900" href="mailto:muhamadzubaedi4@gmail.com">
+      <i class="fas fa-envelope fa-2x">
+      </i>
+     </a>
+     <a class="text-gray-700 hover:text-gray-900" href="https://wa.me/+62894986726">
+      <i class="fab fa-whatsapp fa-2x">
+      </i>
+     </a>
+     <a class="text-gray-700 hover:text-gray-900" href="https://www.instagram.com/vwxzub">
+      <i class="fab fa-instagram fa-2x">
+      </i>
+     </a>
+     <a class="text-gray-700 hover:text-gray-900" href="https://www.linkedin.com/in/yourusername">
+      <i class="fab fa-linkedin fa-2x">
+      </i>
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-white py-4">
+   <div class="container mx-auto px-4 text-center">
+    <p class="text-gray-700">
+     © 2025 Muhamad zubaedi. All rights reserved.
+    </p>
+    <div class="flex justify-center space-x-4 mt-4">
+     <a class="text-gray-700 hover:text-gray-900" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="text-gray-700 hover:text-gray-900" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="text-gray-700 hover:text-gray-900" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+     <a class="text-gray-700 hover:text-gray-900" href="#">
+      <i class="fab fa-github">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

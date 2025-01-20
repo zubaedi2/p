@@ -1,0 +1,84 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.animate-slide-in {
+    display: inline-block;
+    animation: slide-in 0.5s forwards;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+.animate-rotate {
+    animation: rotate 0.5s forwards;
+}
+.grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+.grayscale:hover {
+    filter: grayscale(0%);
+}
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.carousel-item {
+    scroll-snap-align: start;
+    flex: none;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 16px;
+}
+.horizon-italic {
+    font-family: 'Horizon', sans-serif;
+    font-style: italic;
+    color: white;
+}
+section.relative {
+    background: linear-gradient(135deg, #02aaf8, #ee02f7, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gradient animation */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    background-size: 400% 400%;
+    animation: colorChange 8s ease infinite;
+}
+
+/* Keyframes untuk mengganti warna */
+@keyframes colorChange {
+    0% { background: #ff9a9e; }
+    25% { background: #fad0c4; }
+    50% { background: #fbc2eb; }
+    75% { background: #a18cd1; }
+    100% { background: #ff9a9e; }
+}
+
